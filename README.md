@@ -1,4 +1,4 @@
-[Examiner](https://examiner.1university.com) is a paper marking utility.
+[Examiner](https://examiner.1university.com) is a paper marking utility built on NextJS.
 
 ## Install nodejs
 
