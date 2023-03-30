@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-md p-4 mx-auto;
+  }
+
+  .btn {
+    @apply inline-block py-2 px-4 w-full text-center text-lg font-bold bg-teal-500 hover:bg-teal-600 text-white transition-colors rounded-xl disabled:cursor-wait;
+  }
+
+  .glass {
+    @apply bg-zinc-100/95 backdrop-blur supports-[backdrop-filter]:bg-zinc-100/75;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .toast {
+    @apply animate-[toast_0.5s_ease-in-out];
+  }
+}
+
+@keyframes toast {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
